@@ -1,0 +1,4 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^((.*)\.)?(artifactory\.pl)$ [NC]
+RewriteRule ^ https://www.jfrog.com/open-source/#artifactory [R=302,L,NE]
